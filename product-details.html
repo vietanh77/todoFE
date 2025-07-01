@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="product-details-style.css" />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+</head>
+
+<body>
+    <div class="guest">
+        <div>
+            <p>Sign up and get 20% off to your first order.</p>
+            <a href="#">Sign Up Now</a>
+        </div>
+        <img src="images/icons/close.png" alt="" />
+    </div>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="logo" href="home.html">SHOP.CO</a></li>
+                <li class="menu">
+                    <ul>
+                        <li>Shop <img src="images/icons/more.png" alt=""></li>
+                        <li>On Sale</li>
+                        <li>New Arrivals</li>
+                        <li>Brands</li>
+                    </ul>
+                </li>
+                <li class="search-bar">
+                    <div>
+                        <img src="images/icons/search.png" alt="Search">
+                        <input type="text" placeholder="Search for products...">
+                    </div>
+                </li>
+                <li class="icons">
+                    <img src="images/icons/cart.png" alt="Cart">
+                    <img src="images/icons/user.png" alt="User">
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <section class="redirect">
+            <div>
+                <p>Home</p> <img src="images/icons/redirect.png" alt="">
+            </div>
+            <div>
+                <p>Shop</p> <img src="images/icons/redirect.png" alt="">
+            </div>
+            <div>
+                <p>Men</p> <img src="images/icons/redirect.png" alt="">
+            </div>
+            <div class="focus">T-shirts</div>
+        </section>
+    </header>
+    <main>
+        <section class="details">
+            <div class="product-img">
+                <div class="core"><img src="images/products/graphic-t-shirt.png" alt=""></div>
+                <div class="sup1"><img src="images/products/graphic-t-shirt-sup.png" alt=""></div>
+                <div class="sup2"><img src="images/products/graphic-shirt-behind.png" alt=""></div>
+                <div class="sup3"><img src="images/products/t-shirt-graphic-real.png" alt=""></div>
+            </div>
+            <div class="product-detail">
+                <div class="infor">
+                    <p class="name">One Life Graphic T-shirt</p>
+                    <div class="assess">
+                        <p class="star"><img src="images/icons/star.png" alt="">
+                            <img src="images/icons/star.png" alt="">
+                            <img src="images/icons/star.png" alt="">
+                            <img src="images/icons/star.png" alt="">
+                            <img src="images/icons/half-star.png" alt="">
+                        </p>4.5/<p class="max-score">5</p>
+                    </div>
+                    <div class="price">
+                        <p class="price-new">$260</p>
+                        <p class="price-old">$300</p>
+                        <div class="sale">
+                            <p>-40%</p>
+                        </div>
+                    </div>
+                    <div class="description">This graphic t-shirt which is perfect for any occasion. Crafted from a soft
+                        and breathable fabric, it offers superior comfort and style.</div>
+                    <hr>
+                </div>
+                <div class="select">
+                    <p>Select Colors</p>
+                    <div class="colors">
+                        <div class="color" onclick="selectColor(0)"><img class="checkMark"
+                                src="images/icons/white-cumulus.png" alt=""></div>
+                        <div class="color" onclick="selectColor(1)"><img class="checkMark hidden"
+                                src="images/icons/white-cumulus.png" alt=""></div>
+                        <div class="color" onclick="selectColor(2)"><img class="checkMark hidden"
+                                src="images/icons/white-cumulus.png" alt=""></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="select">
+                    <p>Choose Size</p>
+                    <div class="sizes">
+                        <div class="size">
+                            <p>Small</p>
+                        </div>
+                        <div class="size">
+                            <p>Medium</p>
+                        </div>
+                        <div class="size">
+                            <p>Large</p>
+                        </div>
+                        <div class="size">
+                            <p>X-Large</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="buy">
+                    <div class="counter">
+                        <button id="decrease">-</button>
+                        <span id="count" class="count">1</span>
+                        <button id="increase">+</button>
+                    </div>
+                    <div class="add-to-cart"><button>Add to Cart</button></div>
+                </div>
+            </div>
+        </section>
+        <section class="rating-riviews">
+            <div class="rating-riview">
+                <div class="pd">
+                    <p>Product Details</p>
+                    <hr>
+                </div>
+                <div class="rr">
+                    <p>Rating & Reviews</p>
+                    <hr>
+                </div>
+                <div class="faqs">
+                    <p>FAQs</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="rr-nav">
+                <div class="text">
+                    <span>All Riviews</span>
+                    <p>(451)</p>
+                </div>
+                <div class="nav">
+                    <div class="box1"><img src="images/icons/image-frame21.png" alt=""></div>
+                    <div class="box2"><p>Lastest</p> <div><img src="images/icons/more.png" alt=""></div></div>
+                    <div class="box3"><p>Write a Riviews</p></div>
+                </div>
+            </div>
+            <div class="reviews">
+                <div id="reviews-content"></div>
+            </div>
+            <div class="more"><button>Load More Reviews</button></div>
+        </section>
+        <section class="also-like">
+            <div class="td"><p>YOU MIGHT ALSO LIKE</p></div>
+            <div id="nd" class="mid"></div>
+        </section>
+    </main>
+    <footer>
+        <section class="form">
+            <div>
+                <p>STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+            </div>
+            <div>
+                <form action="#">
+                    <span><img src="images/icons/email.png" alt=""><input type="text"
+                            placeholder="Enter your email address"></span>
+                    <button>Subscribe to Newsletter</button>
+                </form>
+            </div>
+        </section>
+        <section class="about">
+            <div class="shop">
+                <h1>SHOP.CO</h1>
+                <br>
+                <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <div class="link">
+                    <img src="images/icons/link.png" alt="">
+                </div>
+            </div>
+            <div class="company">
+                <h2>COMPANY</h2><br>
+                <p>About</p>
+                <p>Features</p>
+                <p>Works</p>
+                <p>Career</p>
+            </div>
+            <div class="help">
+                <h2>HELP</h2><br>
+                <p>Customer support</p>
+                <p>Delivery Details</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="faq">
+                <h2>FAQ</h2><br>
+                <p>Account</p>
+                <p>Manage Deliveries</p>
+                <p>Orders</p>
+                <p>Payments</p>
+            </div>
+            <div class="resources">
+                <h2>Resources</h2><br>
+                <p>Free eBooks</p>
+                <p>Development Tutorial</p>
+                <p>How to - Blog</p>
+                <p>Youtube Playlist</p>
+            </div>
+        </section>
+        <hr>
+        <section class="footer">
+            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <div> <img src="images/icons/payment.png" alt=""></div>
+        </section>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
